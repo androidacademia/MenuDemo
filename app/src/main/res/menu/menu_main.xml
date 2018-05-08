@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.androidacademia.menudemo.MainActivity">
+    <item
+        android:id="@+id/action_copy"
+        android:orderInCategory="90"
+        android:icon="@drawable/ic_action_copy"
+        android:title="@string/action_copy"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:orderInCategory="90"
+        android:title="@string/action_courses"
+        app:showAsAction="never" >
+        <menu>
+            <item
+                android:id="@+id/action_android"
+                android:orderInCategory="90"
+                android:title="@string/action_android"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_kotlin"
+                android:orderInCategory="90"
+                android:title="@string/action_kotlin"
+                app:showAsAction="never" />
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>
